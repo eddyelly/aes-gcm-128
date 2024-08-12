@@ -3,7 +3,7 @@ const GitHubCorner = () => {
   return (
     <>
       <a
-        href="https://github.com/ad1992/aes-gcm-128"
+        href="https://github.com/eddyelly/aes-gcm-128"
         className="github-corner"
         aria-label="View source on GitHub"
       >
