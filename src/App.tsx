@@ -4,6 +4,7 @@ import DecyrptView from "./DecryptView";
 import EncryptView from "./EncryptView";
 import clsx from "clsx";
 import GitHubCorner from "./GitHubCorner";
+import { Analytics } from '@vercel/analytics/react';
 const VIEW = {
   ENCRYPT: 0,
   DECRYPT: 1,
@@ -28,8 +29,10 @@ function App() {
           Decrypt
         </button>
       </div>
+      <Analytics />
       {activeView === VIEW.ENCRYPT ? <EncryptView /> : <DecyrptView />}
     </div>
+    
   );
 }
 
